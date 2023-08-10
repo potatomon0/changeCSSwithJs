@@ -1,0 +1,29 @@
+
+/* defined variables {base,spacing,blur} in root element (which is close to html elemt) */
+:root{
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+img{
+    /* use variable spacing for padding */
+    padding: var(--spacing);
+    background: var(--base);
+    filter:blur(var(--blur));
+}
+.h1{
+    color:var(--base)
+}
+body{
+    text-align:center;
+}
+body{
+    background:#193549;
+    color:white;
+    font-family:"helvetica neue", sans-serif;
+    font-weight:100;
+    font-size:50px;
+}
+.controls{
+    margin-bottom:50px;
+}
